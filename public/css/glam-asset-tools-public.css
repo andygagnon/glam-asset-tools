@@ -2,3 +2,18 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+
+/* write your CSS code here */
+ul.post-meta {
+	display: none;
+}
+
+.wp-block-preformatted, .wp-block-verse {
+	border-color :transparent;
+	font-family: 'EB Garamond', serif;
+	font-family: 'PT Serif', serif;
+	font-size: default;
+	color:#121212;
+}
+
+.powered-by-wordpress { display:none; }
