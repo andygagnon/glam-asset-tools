@@ -172,6 +172,8 @@ class Glam_Asset_Tools {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$this->loader->add_action( 'init', $plugin_public, 'glam_action_init', 999 );
+		$this->loader->add_action( 'init', $plugin_public, 'glam_wp_cli');
 
 	}
 

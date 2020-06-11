@@ -100,4 +100,25 @@ class Glam_Asset_Tools_Public {
 
 	}
 
+
+		/**
+		 * Register the JavaScript for the public-facing side of the site.
+		 *
+		 * @since    1.0.0
+		 */
+		public function glam_action_init() {
+
+			// add rewrite rule
+			//add_rewrite_rule('^blog/?([^/]*)/?','index.php?id=$matches[1]','bottom');
+
+
+		}
+
+		public function glam_wp_cli() {
+
+			// WP_CLI::add_command( 'cool', 'My_Cool_Command' );
+
+
+		}
+
 }

@@ -9,9 +9,10 @@ ul.post-meta {
 }
 
 .wp-block-preformatted, .wp-block-verse {
+	background-color: white;
 	border-color :transparent;
-	font-family: 'EB Garamond', serif;
 	font-family: 'PT Serif', serif;
+	font-family: 'EB Garamond', serif;
 	font-size: default;
 	color:#121212;
 }
