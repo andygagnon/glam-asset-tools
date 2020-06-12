@@ -111,8 +111,15 @@ class Glam_Asset_Tools_Public {
 			// add rewrite rule
 			//add_rewrite_rule('^blog/?([^/]*)/?','index.php?id=$matches[1]','bottom');
 
+			remove_action( 'generate_after_entry_title', 'generate_post_meta' );
 
 		}
+
+		public function glam_custom_excerpt_length( $length ) {
+    	return 20;
+		}
+
+
 
 		public function glam_wp_cli() {
 
