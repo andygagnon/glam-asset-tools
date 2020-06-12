@@ -18,3 +18,7 @@ ul.post-meta {
 }
 
 .powered-by-wordpress { display:none; }
+
+.main-nav ul li a {
+	text-transform: uppercase;
+}
