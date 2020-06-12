@@ -116,7 +116,7 @@ class Glam_Asset_Tools_Public {
 		}
 
 		public function glam_custom_excerpt_length( $length ) {
-    	return 20;
+    	return 28;
 		}
 
 
