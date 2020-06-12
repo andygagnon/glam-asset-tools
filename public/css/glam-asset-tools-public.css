@@ -22,3 +22,7 @@ ul.post-meta {
 .main-nav ul li a, .menu-main-container ul li a {
 	text-transform: uppercase;
 }
+
+.home .entry-title {
+	display:none;
+}
