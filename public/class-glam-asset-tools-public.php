@@ -120,6 +120,16 @@ class Glam_Asset_Tools_Public {
 		}
 
 
+		public function glam_generate_copyright( $copyright ) {
+			$copyright = sprintf( '<span class="copyright">&copy; %1$s %2$s</span>',
+				date( 'Y' ),
+				get_bloginfo( 'name' )
+			);
+
+			return $copyright;
+
+		}
+
 
 		public function glam_wp_cli() {
 
