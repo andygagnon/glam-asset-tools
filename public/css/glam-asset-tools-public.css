@@ -26,3 +26,79 @@ ul.post-meta {
 .home .entry-title {
 	display:none;
 }
+
+/* generate press main navigation colors */
+
+/* MENU ITEMS */
+.main-navigation {
+	background-color: #ff0000;
+}
+
+.main-navigation .navigation-search input[type="search"],
+.main-navigation .navigation-search input[type="search"]:active {
+	color: #FFFFFF;
+	background-color: darkred;
+}
+
+.main-navigation .navigation-search input[type="search"]:focus {
+	color: #FFFFFF;
+	background-color: darkred;
+}
+
+.main-navigation .main-nav ul li a,
+.main-navigation .menu-toggle {
+	color: #FFFFFF;
+}
+
+/* SUB-NAVIGATION */
+
+.main-navigation .main-nav ul ul li a {
+	background: #222222;
+	color: #FFFFFF;
+}
+
+/* MENU ITEM HOVER */
+
+.main-navigation .main-nav ul li:hover > a,
+.main-navigation .main-nav ul li:focus > a,
+.main-navigation .main-nav ul li.sfHover > a {
+	color: #FFFFFF;
+	background-color: darkred;
+}
+
+/* SUB-NAVIGATION HOVER */
+
+.main-navigation .main-nav ul ul li:hover > a,
+.main-navigation .main-nav ul ul li:focus > a,
+.main-navigation .main-nav ul ul li.sfHover > a {
+	color: #FFFFFF;
+	background-color: #4f4f4f;
+}
+
+/* CURRENT ITEMS */
+
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+	color: #FFFFFF;
+	background-color: darkred;
+}
+
+.main-navigation .main-nav ul li[class*="current-menu-"]:hover > a,
+.main-navigation .main-nav ul li[class*="current-menu-"]:focus > a,
+.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a {
+	color: #FFFFFF;
+	background-color: darkred;
+}
+
+/* SUB-NAVIGATION CURRENT ITEMS */
+
+.main-navigation .main-nav ul ul li[class*="current-menu-"] > a {
+	color: #FFFFFF;
+	background-color: #4f4f4f;
+}
+
+.main-navigation .main-nav ul ul li[class*="current-menu-"]:hover > a,
+.main-navigation .main-nav ul ul li[class*="current-menu-"]:focus > a,
+.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a {
+	color: #FFFFFF;
+	background-color: #4f4f4f;
+}

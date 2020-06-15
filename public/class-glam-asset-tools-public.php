@@ -111,15 +111,19 @@ class Glam_Asset_Tools_Public {
 			// add rewrite rule
 			//add_rewrite_rule('^blog/?([^/]*)/?','index.php?id=$matches[1]','bottom');
 
+			// remove meta below single post title
 			remove_action( 'generate_after_entry_title', 'generate_post_meta' );
 
 		}
 
+		// set excpert length in words for archive templates
 		public function glam_custom_excerpt_length( $length ) {
-    	return 28;
+			return 28;
+    	// return 0;
 		}
 
 
+		// filter and change generatepress copyright text
 		public function glam_generate_copyright( $copyright ) {
 			$copyright = sprintf( '<span class="copyright">&copy; %1$s %2$s</span>',
 				date( 'Y' ),
@@ -130,12 +134,28 @@ class Glam_Asset_Tools_Public {
 
 		}
 
+		// unused, generatepress template provides this
+		public function glam_generate_archive_description ( ) {
+			$s = '';
+			if ( 0 && is_category() ) {
 
-		public function glam_wp_cli() {
+				$term_id = get_category_by_slug('fiction')->term_id;
+				$s = 'test';
+				// $s = category_description( $term_id );
+			}
+			else {
+				$s = '';
+			}
 
-			// WP_CLI::add_command( 'cool', 'My_Cool_Command' );
-
+			if ( $s )
+			echo '<div class="archive-description">
+				<p>
+					'.$s.'.
+				</p>
+			</div>';
 
 		}
+
+
 
 }

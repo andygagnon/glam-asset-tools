@@ -170,12 +170,13 @@ class Glam_Asset_Tools {
 
 		$plugin_public = new Glam_Asset_Tools_Public( $this->get_plugin_name(), $this->get_version() );
 
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' , 999);
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $plugin_public, 'glam_action_init', 999 );
 		$this->loader->add_action( 'init', $plugin_public, 'glam_wp_cli');
 		$this->loader->add_filter( 'excerpt_length', $plugin_public, 'glam_custom_excerpt_length', 999 );
 		$this->loader->add_filter( 'generate_copyright', $plugin_public, 'glam_generate_copyright' );
+		// $this->loader->add_filter( 'generate_after_archive_title', $plugin_public, 'glam_generate_archive_description' );
 
 
 	}
