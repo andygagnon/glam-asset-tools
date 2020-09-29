@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://andregagnon.com
- * @since             1.0.1
+ * @since             1.0.2
  * @package           Glam_Asset_Tools
  *
  * @wordpress-plugin
